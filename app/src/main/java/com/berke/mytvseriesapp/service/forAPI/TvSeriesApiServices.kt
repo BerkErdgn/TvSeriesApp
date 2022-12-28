@@ -1,6 +1,7 @@
-package com.berke.mytvseriesapp.service
+package com.berke.mytvseriesapp.service.forAPI
 
 import com.berke.mytvseriesapp.models.TvSeriesModels
+import com.berke.mytvseriesapp.models.TvSeriesModelsItem
 import io.reactivex.Single
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
@@ -23,5 +24,10 @@ class TvSeriesApiServices {
     fun getData (): Single<TvSeriesModels>{
         return api.getTvSeries()
     }
+
+    fun getData2 ( showId : Int): Single<TvSeriesModelsItem>{
+        return  api.getMainTvSeries(showId)
+    }
+
 
 }

@@ -34,7 +34,7 @@ class TvSeriesAdapter( val tvSeriesList : TvSeriesModels): RecyclerView.Adapter<
 
         //for viewClick
         holder.view.setOnClickListener{
-            val action = FeedTvSeriesFragmentDirections.actionFeedTvSeriesFragmentToMainTvSeriesFragment()
+            val action = FeedTvSeriesFragmentDirections.actionFeedTvSeriesFragmentToMainTvSeriesFragment(tvShowid = tvSeriesList[position].id)
             Navigation.findNavController(it).navigate(action)
         }
 

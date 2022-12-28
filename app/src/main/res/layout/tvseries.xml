@@ -1,31 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="150dp"
-    android:layout_height="250dp"
+    android:layout_width="175dp"
+    android:layout_height="270dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:elevation="10dp"
-    app:cardCornerRadius="10dp">
+    app:cardCornerRadius="10dp"
+    android:background="@color/black"
+    app:cardBackgroundColor="@color/black">
+
 
     <LinearLayout
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-    <ImageView
-        android:id="@+id/feedImage"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="fitXY"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:orientation="vertical"
+        android:background="@drawable/tvseriesframe">
 
-    <TextView
-        android:id="@+id/feedTvSeriesNameText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="TvSeriesName"
-        android:textSize="18sp"
-        android:gravity="center"/>
+        <ImageView
+            android:id="@+id/feedImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_margin="3dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/feedTvSeriesNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="TvSeriesName"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
 
     </LinearLayout>
 

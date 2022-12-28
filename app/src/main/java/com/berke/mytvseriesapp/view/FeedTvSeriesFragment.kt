@@ -1,24 +1,17 @@
 package com.berke.mytvseriesapp.view
 
 import android.os.Bundle
-import android.os.SystemClock.sleep
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.berke.mytvseriesapp.R
 import com.berke.mytvseriesapp.adapter.TvSeriesAdapter
 import com.berke.mytvseriesapp.models.TvSeriesModels
-import com.berke.mytvseriesapp.service.TvSeriesApiServices
 import com.berke.mytvseriesapp.viewModels.FeedViewModel
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.observers.DisposableSingleObserver
-import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.fragment_feed_tv_series.*
 
 private lateinit var viewModel: FeedViewModel
@@ -46,7 +39,7 @@ class FeedTvSeriesFragment : Fragment() {
         viewModel = ViewModelProviders.of(this).get(FeedViewModel::class.java)
         viewModel.refreshData()
 
-        feedRecyclerView.layoutManager=LinearLayoutManager(context)
+        feedRecyclerView.layoutManager=GridLayoutManager(context,2)
         feedRecyclerView.adapter= tvSeriesAdapter
 
         observeLiveData()

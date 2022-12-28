@@ -15,11 +15,16 @@
             app:destination="@id/mainTvSeriesFragment" />
         <argument
             android:name="tvShowid"
-            app:argType="integer" />
+            app:argType="integer"
+            android:defaultValue="1" />
     </fragment>
     <fragment
         android:id="@+id/mainTvSeriesFragment"
         android:name="com.berke.mytvseriesapp.view.MainTvSeriesFragment"
         android:label="fragment_main_tv_series"
-        tools:layout="@layout/fragment_main_tv_series" />
+        tools:layout="@layout/fragment_main_tv_series" >
+        <argument
+            android:name="tvShowid"
+            app:argType="integer" />
+    </fragment>
 </navigation>
