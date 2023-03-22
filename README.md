@@ -45,7 +45,7 @@ To download the project
   2-Click on Download ZIP
   3-Extract the ZIP and open it to Android Studio
 ```
-As an alternaive
+As an alternative
 
 you can directly download the ZIP by clicking the [link here](https://github.com/BerkErdgn/TvSeriesApp/archive/refs/heads/main.zip) .
 
