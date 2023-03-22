@@ -1,7 +1,8 @@
+
 # Tv Series App (Level 1)
 In this application, I display TV shows from tvmaze. It is a very useful tool for TV viewers because it is an application that provides information about TV shows. This app helps users better understand TV shows and discover new ones.
 
-Then I developed this application further. For Level 2 app -> https://github.com/BerkErdgn/TvSeriesApp-Level-2
+Then I developed this application further. For [Tv Series App(Level 2) ](https://github.com/BerkErdgn/TvSeriesApp-Level-2)
 
 
 ## Technologies Used
@@ -34,6 +35,20 @@ Then I developed this application further. For Level 2 app -> https://github.com
 Feed Fragment| Detail Fragment
  --- | --- | 
 ![](https://github.com/BerkErdgn/TvSeriesApp/blob/main/sc/TvSeriesApp-1.png?raw=true)| ![](https://github.com/BerkErdgn/TvSeriesApp/blob/main/sc/TvSeriesApp-2.png?raw=true) 
+
+## Download  
+
+To download the project
+
+```bash 
+  1-Press the green "Code" button at the top right of this page.
+  2-Click on Download ZIP
+  3-Extract the ZIP and open it to Android Studio
+```
+As an alternaive
+
+you can directly download the ZIP by clicking the [link here](https://github.com/BerkErdgn/TvSeriesApp/archive/refs/heads/main.zip) .
+
 
 ## Find a bug?
 
